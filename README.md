@@ -9,7 +9,7 @@ This OCI container image is used for git client tasks.
 ```bash
 docker run \
   ...
-  docker.io/curx/git:v1
+  docker.io/curx/git:v1 \
   <git-cmd>
 ```
 

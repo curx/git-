@@ -1,0 +1,14 @@
+FROM arm32v6/alpine:3.12@sha256:71465c7d45a086a2181ce33bb47f7eaef5c233eace65704da0c5e5454a79cee5
+
+LABEL maintainer="Thorsten Schifferdecker https://github.com/curx" \
+  org.label-schema.vendor="Thorsten Schifferdecker" \
+  org.label-schema.name="git" \      
+  org.label-schema.version="1.1" \
+  org.label-schema.schema-version="1.0"
+
+ENTRYPOINT ["/usr/bin/git"]
+CMD ["--help"]
+
+RUN apk -U --no-cache add git
+
+WORKDIR /data

@@ -1,0 +1,19 @@
+image: curx/git:1.1
+manifests:
+  -
+    image: curx/git:1.1-amd64
+    platform:
+      architecture: amd64
+      os: linux
+  -
+    image: curx/git:1.1-arm32v6
+    platform:
+      architecture: arm
+      os: linux
+      varian: v6
+  -
+    image: curx/git:1.1-arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      varian: v8
